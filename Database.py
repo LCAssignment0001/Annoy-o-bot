@@ -12,11 +12,11 @@ def setupDb(name):
 
 # Primary table - contains information on whom to greet with what message
 class MessageConfiguration(db.Entity):
-    guild_id = Required(int, size=64)
-    user_id = Required(int, size=64)
+    # guild_id = Required(int, size=64)
+    user_id = PrimaryKey(int, size=64)
     message = Required(str)
     annoyance = Required(bool)
-    PrimaryKey(guild_id, user_id)
+    # PrimaryKey(guild_id, user_id)
 
 
 # Auxiliary table - contains information on what channels to greet people in
