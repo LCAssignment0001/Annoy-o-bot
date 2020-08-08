@@ -1,0 +1,13 @@
+{
+  "token": "",
+  "bot": {
+    "plugins": [
+      "Bot"
+    ],
+    "commands_require_mention": false,
+    "sync_guild_members": true
+  },
+  "admins":[229289841840488448],
+  "db":"database.sqlite",
+  "configured_db": false
+}
